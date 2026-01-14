@@ -39,6 +39,14 @@
         }
       }
     },
+    "legend": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "crops": {
       "type": "relation",
       "relation": "oneToMany",

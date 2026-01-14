@@ -667,6 +667,12 @@ export interface ApiImageImage extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    legend: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::image.image'>;
     publishedAt: Schema.Attribute.DateTime;
