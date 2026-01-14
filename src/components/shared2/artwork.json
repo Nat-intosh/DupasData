@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared2_artworks",
+  "info": {
+    "displayName": "artwork",
+    "icon": "brush"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "component",
+      "component": "shared2.images",
+      "repeatable": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

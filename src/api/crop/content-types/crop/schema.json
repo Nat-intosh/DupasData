@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "crops",
+  "info": {
+    "singularName": "crop",
+    "pluralName": "crops",
+    "displayName": "crop"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "artwork_location_x": {
+      "type": "integer"
+    },
+    "artwork_location_y": {
+      "type": "integer"
+    },
+    "artwork_location_w": {
+      "type": "integer"
+    },
+    "artwork_location_h": {
+      "type": "integer"
+    }
+  }
+}

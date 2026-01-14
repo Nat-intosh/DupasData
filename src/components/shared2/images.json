@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared2_images",
+  "info": {
+    "displayName": "images",
+    "icon": "play"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "copyright": {
+      "type": "string"
+    },
+    "crop": {
+      "type": "component",
+      "component": "shared2.crop",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

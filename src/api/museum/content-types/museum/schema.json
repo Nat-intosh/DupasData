@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "museums",
+  "info": {
+    "singularName": "museum",
+    "pluralName": "museums",
+    "displayName": "museum"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "x": {
+      "type": "integer"
+    },
+    "y": {
+      "type": "integer"
+    },
+    "model3d": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "adress": {
+      "type": "string"
+    },
+    "artworks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::artwork.artwork"
+    },
+    "images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::image.image"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared2_museums",
+  "info": {
+    "displayName": "museum",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "artwork": {
+      "type": "component",
+      "component": "shared2.artwork",
+      "repeatable": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "adress": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

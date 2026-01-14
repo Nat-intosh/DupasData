@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared2_crops",
+  "info": {
+    "displayName": "crop",
+    "icon": "collapse"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

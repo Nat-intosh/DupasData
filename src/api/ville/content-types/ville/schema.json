@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "villes",
+  "info": {
+    "singularName": "ville",
+    "pluralName": "villes",
+    "displayName": "city"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "x": {
+      "type": "integer"
+    },
+    "y": {
+      "type": "integer"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "museums": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::museum.museum"
+    }
+  }
+}
