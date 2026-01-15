@@ -533,6 +533,44 @@ export interface ApiArtworkArtwork extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiContinentContinent extends Struct.CollectionTypeSchema {
+  collectionName: 'continents';
+  info: {
+    displayName: 'continent';
+    pluralName: 'continents';
+    singularName: 'continent';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    cities: Schema.Attribute.Relation<'oneToMany', 'api::ville.ville'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::continent.continent'
+    >;
+    Name: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCropCrop extends Struct.CollectionTypeSchema {
   collectionName: 'crops';
   info: {
@@ -1319,6 +1357,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::about.about': ApiAboutAbout;
       'api::artwork.artwork': ApiArtworkArtwork;
+      'api::continent.continent': ApiContinentContinent;
       'api::crop.crop': ApiCropCrop;
       'api::global.global': ApiGlobalGlobal;
       'api::image.image': ApiImageImage;
