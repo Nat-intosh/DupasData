@@ -626,6 +626,12 @@ export interface ApiCropCrop extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    filename: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::crop.crop'>;
     publishedAt: Schema.Attribute.DateTime;

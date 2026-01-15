@@ -15,6 +15,22 @@
     }
   },
   "attributes": {
+    "file": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "filename": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "description": {
       "type": "text",
       "pluginOptions": {
@@ -49,14 +65,6 @@
     },
     "artwork_location_h": {
       "type": "integer",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "file": {
-      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
