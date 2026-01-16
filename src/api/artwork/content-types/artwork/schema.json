@@ -23,14 +23,6 @@
         }
       }
     },
-    "creationplace": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "artist": {
       "type": "string",
       "pluginOptions": {
