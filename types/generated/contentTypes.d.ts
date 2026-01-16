@@ -587,25 +587,25 @@ export interface ApiCropCrop extends Struct.CollectionTypeSchema {
     };
   };
   attributes: {
-    artwork_location_h: Schema.Attribute.Integer &
+    artwork_location_h: Schema.Attribute.Decimal &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    artwork_location_w: Schema.Attribute.Integer &
+    artwork_location_w: Schema.Attribute.Decimal &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    artwork_location_x: Schema.Attribute.Integer &
+    artwork_location_x: Schema.Attribute.Decimal &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    artwork_location_y: Schema.Attribute.Integer &
+    artwork_location_y: Schema.Attribute.Decimal &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -783,13 +783,13 @@ export interface ApiMuseumMuseum extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    x: Schema.Attribute.Integer &
+    x: Schema.Attribute.Decimal &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    y: Schema.Attribute.Integer &
+    y: Schema.Attribute.Decimal &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -836,13 +836,13 @@ export interface ApiVilleVille extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    x: Schema.Attribute.Integer &
+    x: Schema.Attribute.Decimal &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    y: Schema.Attribute.Integer &
+    y: Schema.Attribute.Decimal &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

@@ -40,7 +40,7 @@
       }
     },
     "artwork_location_x": {
-      "type": "integer",
+      "type": "decimal",
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -48,7 +48,7 @@
       }
     },
     "artwork_location_y": {
-      "type": "integer",
+      "type": "decimal",
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -56,7 +56,7 @@
       }
     },
     "artwork_location_w": {
-      "type": "integer",
+      "type": "decimal",
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -64,7 +64,7 @@
       }
     },
     "artwork_location_h": {
-      "type": "integer",
+      "type": "decimal",
       "pluginOptions": {
         "i18n": {
           "localized": true

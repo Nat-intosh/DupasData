@@ -32,7 +32,7 @@
       }
     },
     "x": {
-      "type": "integer",
+      "type": "decimal",
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -40,7 +40,7 @@
       }
     },
     "y": {
-      "type": "integer",
+      "type": "decimal",
       "pluginOptions": {
         "i18n": {
           "localized": true
