@@ -23,6 +23,14 @@
         }
       }
     },
+    "actualname": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "slug": {
       "type": "string",
       "pluginOptions": {
